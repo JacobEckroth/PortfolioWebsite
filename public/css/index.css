@@ -3,15 +3,18 @@ body{
     padding:0px;
 }
 
-
+/*
+https://www.crazyegg.com/blog/website-color-palettes/
+all the way down at the bottom
+*/
 h1{
-    color:#6d2121;
+    color:#B29050;
 }
 h2{
-    color:#aa1616;
+    color:#FFDFA4;
 }
 h3{
-    color:#39a1a1;
+    color:#6085B2;
 }
 p{
     color:black;

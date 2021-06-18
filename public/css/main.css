@@ -44,8 +44,9 @@
     position:relative;
     padding-bottom:1rem;
     color:white;
+    margin-top:10px;
+   
 }
-
 
 @media(max-width:1000px){
     #leftSideStuck{
@@ -53,6 +54,6 @@
     }
     #rightSideContentHolder{
         margin-left:30vw;
-        width:70vw;
+        width:69vw;
     }
 }
