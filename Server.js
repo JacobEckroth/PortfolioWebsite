@@ -3,7 +3,7 @@ const express = require('express')
 const fs = require('fs');
 const app = express()
 const path = require('path')
-
+var favicon = require('serve-favicon')
 const config = require('./config.json')
 const port = config.runPort;
 
@@ -33,5 +33,6 @@ app.listen(port, () => {
     }));
     app.set('view engine', 'handlebars');
     app.use(express.static(__dirname + '/public'));
+    app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
     console.log(`Example app listening at http://localhost:${port}`)
 })
