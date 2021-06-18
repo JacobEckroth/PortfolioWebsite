@@ -1,0 +1,53 @@
+.projectTitle{
+    font-size:5rem;
+}
+.dateCompleted{
+    
+}
+.projectImageFull{
+    width:100%;
+    height:auto;
+}
+.projectImageHalf{
+    width:50%;
+    height:auto;
+}
+.projectImageThird{
+    width:33%;
+    height:auto;
+}
+.sectionHeader{
+    font-size:2.5rem;
+    border-top:.02rem solid rgb(116, 116, 116);
+    padding-top:1rem;
+    margin-top:1rem;
+}
+
+.projectLink{
+    color:#20639B;
+    font-weight:bold;
+    text-decoration:underline;
+}
+
+#linkHolder{
+    width:100%;
+    height:5rem;
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+.logoSVG{
+    height:100%;
+    width:auto;
+    fill:black;
+}
+.logoSVG:hover{
+    animation: wiggleIn 1.5s linear infinite;
+}
+.youtubeSVG{
+    margin-left:2rem;
+}
+
+path{
+    transition:fill 1s ease;
+    fill:inherit;
+}

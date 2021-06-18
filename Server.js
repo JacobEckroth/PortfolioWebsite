@@ -11,7 +11,7 @@ const port = config.runPort;
 
 
 app.get('/', (req, res) => {
-    res.render('portfolioHomePage')
+    res.render('exampleProjectPage')
 })
 
 app.listen(port, () => {

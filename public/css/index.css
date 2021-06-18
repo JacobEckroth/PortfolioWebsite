@@ -2,3 +2,24 @@ body{
     margin:0px;
     padding:0px;
 }
+
+
+h1{
+    color:#6d2121;
+}
+h2{
+    color:#aa1616;
+}
+h3{
+    color:#39a1a1;
+}
+p{
+    color:black;
+}
+.githubSVG:hover{
+    fill:rgb(96, 96, 168); 
+}
+.youtubeSVG:hover{
+    fill:red;
+}
+
