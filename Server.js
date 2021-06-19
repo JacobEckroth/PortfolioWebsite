@@ -6,14 +6,7 @@ const path = require('path')
 var favicon = require('serve-favicon')
 const config = require('./config.json')
 const port = config.runPort;
-
-
-
-
-app.get('/', (req, res) => {
-    res.render('chessPartOne')
-})
-
+app.use(express.static(__dirname + '/public'));
 app.listen(port, () => {
     app.set('views', __dirname + '/views');
     app.engine('handlebars', exphbs({
@@ -32,7 +25,19 @@ app.listen(port, () => {
         }
     }));
     app.set('view engine', 'handlebars');
-    app.use(express.static(__dirname + '/public'));
+
     app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
     console.log(`Example app listening at http://localhost:${port}`)
 })
+
+app.get('/',(req,res)=>{
+    res.render('portfolioHomePage');
+})
+app.get('/chessPartOne', (req, res) => {
+    res.render('chessPartOne')
+})
+
+app.get('*',(req,res)=>{
+    res.status(404).render('404')
+})
+
