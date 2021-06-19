@@ -9,6 +9,7 @@ all the way down at the bottom
 */
 h1{
     color:#B29050;
+    font-size:5rem;
 }
 h2{
     color:#FFDFA4;
@@ -25,4 +26,14 @@ p{
 .youtubeSVG:hover{
     fill:red;
 }
+
+a{
+    color:#20639B;
+    font-weight:bold;
+    text-decoration:underline;
+}
+
+
+
+
 

@@ -41,3 +41,36 @@ app.get('*',(req,res)=>{
     res.status(404).render('404')
 })
 
+
+//no posts are allowed
+app.post('*',(req,res)=>{
+    res.status(403).end();
+})
+
+
+//no puts are allowed
+app.put('*',(req,res)=>{
+    res.status(403).end();
+})
+
+
+//no deletes are allowed
+app.delete('*',(req,res)=>{
+    res.status(403).end();
+})
+
+app.connect('*',(req,res)=>{
+    res.status(403).end()
+})
+
+app.options('*',(req,res)=>{
+    res.status(403).end()
+})
+
+app.trace('*',(req,res)=>{
+    res.status(403).end()
+})
+
+app.patch('*',(req,res)=>{
+    res.status(403).end()
+})
