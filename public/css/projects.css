@@ -2,7 +2,7 @@
     font-size:5rem;
 }
 .dateCompleted{
-    
+    font-size:1.5rem;
 }
 .projectImage{
     margin-top:15px;
@@ -26,7 +26,10 @@
     height:auto;
 }
 
-
+.projectVideo{
+    width:640px;
+    height:360px;
+}
 .projectLink{
     color:#20639B;
     font-weight:bold;
@@ -54,4 +57,25 @@
 path{
     transition:fill 1s ease;
     fill:inherit;
+}
+@media(max-width:1200px){
+    .projectVideo{
+        width:370px;
+        height:208px;
+    }
+    .projectTitle{
+        font-size:3rem;
+    }
+    #linkHolder{
+        height:3rem;
+    }
+}
+@media(max-width:600px){
+    .projectTitle{
+        font-size:2.5rem;
+    }
+    .projectVideo{
+        width:247px;
+        height:139px;
+    }
 }
