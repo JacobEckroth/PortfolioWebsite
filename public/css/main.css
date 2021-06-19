@@ -89,6 +89,10 @@
         display:flex;
         flex-flow: column wrap;
     }
+    #titleHeader{
+        display:none;
+    }
+    
     #content-wrap{
         padding-top:10vh;
     }
