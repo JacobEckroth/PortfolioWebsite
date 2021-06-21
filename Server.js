@@ -37,6 +37,10 @@ app.get('/chessPartOne', (req, res) => {
     res.render('chessPartOne')
 })
 
+app.get('/portfolio',(req,res)=>{
+    res.render('portfolioProjectPage');
+})
+
 app.get('*',(req,res)=>{
     res.status(404).render('404')
 })
