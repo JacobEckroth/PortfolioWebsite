@@ -88,6 +88,8 @@
         left:0px;
         display:flex;
         flex-flow: column wrap;
+        padding-top:5px;
+        padding-bottom:5px;
     }
     #titleHeader{
         display:none;
@@ -112,3 +114,5 @@
         padding-top:15vh;
     }
 }
+
+

@@ -1,0 +1,22 @@
+.cardImage{
+    width:100%;
+    height:auto;
+}
+
+.card-deck{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+}
+
+.card{
+    width:300px;
+    margin:20px;
+
+}
+.card:hover{
+    cursor:pointer;
+}
+.cardLink{
+    text-decoration: none;
+}
