@@ -40,6 +40,9 @@ app.get('/chessPartOne', (req, res) => {
 app.get('/portfolio',(req,res)=>{
     res.render('portfolioProjectPage');
 })
+app.get('/openGLClock',(req,res)=>{
+    res.render('openGLClock')
+})
 
 app.get('*',(req,res)=>{
     res.status(404).render('404')
