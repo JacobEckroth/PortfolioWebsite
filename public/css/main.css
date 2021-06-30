@@ -76,8 +76,8 @@
 @media(max-width:600px){
     
     #rightSideContentHolder{
-        width:100vw;
-        margin-left:0vw;
+        width:99vw;
+        margin-left:.5vw;
     }
     #leftSideStuck{
      
@@ -99,4 +99,16 @@
    
     
     
+}
+
+@media(max-width:400px){
+    #leftSideStuck{
+        height:15vh;
+    }
+    .dropdown{
+        margin-top:10px;
+    }
+    #content-wrap{
+        padding-top:15vh;
+    }
 }
