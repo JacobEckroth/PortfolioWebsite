@@ -2,6 +2,8 @@
 
 {{#section "head"}}
 <link rel="stylesheet" href="/css/home.css" />
+<link rel="stylesheet" href="/css/search.css" />
+<script type="text/javascript" src="/js/searching.js" defer></script>
 <title>Jacob's Portfolio</title>
 {{/section}}
 {{#section "pageTitle"}}Home Page{{/section}}
@@ -12,23 +14,64 @@
     <p>All that's left for you to do is start exploring my projects! You can do this by using the sidebar (or top bar if you're on mobile)</p>
     <p>Eventually I will display clickable images on this page, but this is still a very much work-in-progress website.</p>
     <p>Have fun!</p>
-   <div class="card-deck">
+    <div id="searchHolder">
+        <h2 id="searchHeader">Search Projects</h2>
+        <form>
+            <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="searchProjects" placeholder="sear">
+            <label for="floatingInput">Search Projects</label>
+            
+          
+            </div>
+        <div class="container">
+            
+                
+            <div class="row row-cols-auto">
+                <div class="col">
+                    <button type="button" id="React" class="searchButton inactive">React</button>
+                </div>
+                 <div class="col">
+                    <button type="button" id="JavaScript" class="searchButton inactive">JavaScript</button>
+                 </div>
+                 <div class="col">
+                    <button type="button" id="Handlebars" class="searchButton inactive">Handlebars</button>
+                 </div>
+            
+            
+                  <div class="col">
+                    <button type="button" class="searchButton inactive" id="C++">C++</button>
+                </div>
+                <div class="col">
+                    <button type="button" id="OpenGL" class="searchButton inactive">OpenGL</button>
+                </div>
+                <div class="col">
+                    <button type="button" id="GLSL" class="searchButton inactive">GLSL</button>
+                </div>
+                 <div class="col">
+                    <button type="button" id="SDL" class="searchButton inactive">SDL</button>
+                </div>
+             </div>
+               
+                
+            
+              
 
-  <div class="card" href="#">
-
-    <img class="card-img-top cardImage" src="/images/cards/chess.png" alt="Card image cap">
-    
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <a href="/chessPartOne" class="btn btn-primary stretched-link">Portfolio Page</a>
+                
+                
+               
+                
+            </div>    
+            
+           
+        </div>
+         <button id="resetSearch" type="button">Reset Parameters</button>
+        </form>
+      
+        <h3 id="showingProjectsText">Showing All Projects:</h3>
+          
+        
     </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>  
-    </a>
-  </div>
+   
   
-</div>
 
 </div>

@@ -1,0 +1,40 @@
+#searchHolder{
+    width:100%;
+}
+#searchHeader{
+    color:black;
+    font-size:3rem;
+}
+
+.searchButton{
+    border:none;
+    border-radius:10px;
+    padding-left:10px;
+    flex-basis: 10%;
+    box-shadow:1px 1px 5px black;
+    transition:box-shadow .2s linear,color .2s linear;
+    font-size:1.5rem;
+    margin-bottom:10px;
+}
+.searchButton:hover{
+    box-shadow:3px 3px 5px black;
+   
+}
+
+
+.active{
+    background-color:rgb(99, 203, 211);
+    color:white;
+}
+.active:hover{
+    color:grey;
+}
+.inactive{
+    background-color:grey;
+    color:black;
+}
+.inactive:hover{
+    color:rgb(99, 203, 211);
+}
+
+
