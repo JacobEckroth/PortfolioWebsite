@@ -4,6 +4,7 @@ var searchButtons = document.getElementsByClassName("searchButton");
 
 
 
+
 var searchTerms = []
 
 for(var i = 0; i < searchButtons.length; i++){

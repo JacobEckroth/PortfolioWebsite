@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon Server.js"
+    "start": "nodemon Server.js",
+    "prestart": "npm run build",
+    "build":"handlebars views/partials/projectCard.handlebars -f public/js/projectCardTemplate.js"
   },
   "author": "",
   "license": "ISC",
