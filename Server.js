@@ -4,8 +4,7 @@ const fs = require('fs');
 const app = express()
 const path = require('path')
 var favicon = require('serve-favicon')
-const config = require('./config.json')
-const port = config.runPort;
+const port = process.env.PORT || 80;
 app.use(express.static(__dirname + '/public'));
 app.listen(port, () => {
     app.set('views', __dirname + '/views');
